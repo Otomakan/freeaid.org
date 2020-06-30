@@ -3,7 +3,8 @@ import quizQuestions from "../api/quizQuestions";
 import Quiz from "../components/Quiz";
 import Result from "../components/Result";
 import WikiIframe from '../components/WikiIframe'
-import AdSense from 'react-adsense'
+// import AdSense from 'react-adsense'
+import AdSpace from '../components/AdSpace'
 
 class Home extends Component {
 
@@ -168,6 +169,9 @@ class Home extends Component {
        
 				{/* {this.state.questionsAnswered > 0  && */}
 						<div className="validAnswersContainer">
+							<AdSpace points={this.state.questionId}/>
+							{/* <AdSpace/> */}
+
 							<div className='pointsCounter'>
 							
 							You have now donated {this.state.questionsAnswered * 10} Aid Points to charities fighting for social justice
@@ -204,12 +208,6 @@ class Home extends Component {
 						}
 						</div>
 
-						<div className='ad-sense-container'>
-						<AdSense.Google
-							client='ca-pub-7292810486004926'
-							slot='7806394673'
-						/>
-						</div>
 					</div>
 			</div> 
 		) 

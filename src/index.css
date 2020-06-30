@@ -128,6 +128,16 @@ nav {
 	padding: 0 40px;
 	width: 400px;
 }
+
+.adSpaceContainer {
+	height: 300px;
+	width: 100%;
+	/* background: red; */
+	.adSpace {
+
+	}
+
+}
 .leftColumn {
 	width: fit-content;
 }

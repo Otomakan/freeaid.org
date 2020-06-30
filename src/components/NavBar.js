@@ -3,8 +3,7 @@ import {NavLink, useLocation} from 'react-router-dom'
 import logo from "../svg/logo.svg";
 
 const NavBar = () => {
-	let location = useLocation();
-  console.log(location.pathname);
+	let location = useLocation()
 
 	return (
 	<nav className="App-header">
